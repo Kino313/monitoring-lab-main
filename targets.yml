@@ -1,0 +1,41 @@
+- targets:
+    - http://prometheus:9090
+  labels:
+    name: Bank Master
+    type: bank
+    role: Master
+
+- targets:
+    - http://grafana:3000
+  labels:
+    name: Bank Worker 1
+    type: bank
+    role: Worker
+
+- targets:
+    - http://blackbox:9115
+  labels:
+    name: Bank Worker 2
+    type: bank
+    role: Worker
+
+- targets:
+    - http://prometheus:9090
+  labels:
+    name: Hospital Master
+    type: hospital
+    role: Master
+
+- targets:
+    - http://grafana:3000
+  labels:
+    name: Hospital Worker 1
+    type: hospital
+    role: Worker
+
+- targets:
+    - http://blackbox:9115
+  labels:
+    name: Hospital Worker 2
+    type: hospital
+    role: Worker
